@@ -1,5 +1,6 @@
 import { createStackNavigator, createAppContainer } from "react-navigation";
 import { Platform } from "react-native";
+
 import Colors from "../constants/Colors";
 import CategoriesScreen from "../screens/CategoriesScreen";
 import CategoryMealsScreen from "../screens/CategoryMealsScreen";
@@ -9,10 +10,8 @@ const MealsNavigator = createStackNavigator(
   {
     Categories: {
       screen: CategoriesScreen,
-      navigationOptions: {
-        headerTitle: "Meal Categories",
-      },
     },
+
     CategoryMeals: {
       screen: CategoryMealsScreen,
     },
@@ -23,10 +22,12 @@ const MealsNavigator = createStackNavigator(
 
     defaultNavigationOptions: {
       headerStyle: {
-        backgroudColor: Platform.OS === "android" ? Colors.primaryColor : "",
+        backgroudColor:
+          Platform.OS === "android" ? Colors.primaryColor : "yellow",
       },
       headerTintColor:
         Platform.OS === "android" ? "white" : Colors.primaryColor,
+      headerTitle: "a aaa",
     },
   }
 );
