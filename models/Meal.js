@@ -25,8 +25,8 @@ class Meal {
       (this.steps = steps),
       (this.isGlutenFree = isGlutenFree),
       (this.isVegan = isVegan),
-      (this.isVegetarian = isVegetarian);
-    this.isLactoseFree = isLactoseFree;
+      (this.isVegetarian = isVegetarian),
+      (this.isLactoseFree = isLactoseFree);
   }
 }
 
