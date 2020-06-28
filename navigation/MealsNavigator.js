@@ -25,7 +25,7 @@ const defaultStackNavOptions = {
     fontFamily: "open-sans-bold",
   },
   headerBackTitleStyle: {
-    fontFamily: "opne-sans",
+    fontFamily: "open-sans",
   },
 };
 
